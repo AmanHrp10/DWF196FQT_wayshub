@@ -1,6 +1,5 @@
-import './style.css';
-import Form from '../../components/login/Form';
-import Brand from '../../components/login/Brand';
+import Form from '../../components/login/formLogin';
+import Brand from '../../components/login/brandLogin';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Login() {

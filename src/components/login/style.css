@@ -1,13 +1,13 @@
 .card-login {
+    padding: 2em;
     position: absolute;
-    /* left: 641px; */
-    top: 143px;
     width: 416px;
-    border-radius: 10px;
+    height: 311px;
+    left: 35px;
+    top: 143px;
+
     background: #161616;
-    padding: 10px;
-    font-style: normal;
-    line-height: 49px;
+    border-radius: 10px;
 }
 
 .signIn input {
@@ -30,15 +30,13 @@
 
 /* Brand file */
 
-.img {
+.imgLogin {
     position: absolute;
-    width: 387px;
-    height: 294px;
-    left: 139px;
+    left: 79px;
     top: 157px;
 }
 
-.button {
+.buttonLogin {
     width: 120px;
     margin-top: 1.5em;
 }

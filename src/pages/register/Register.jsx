@@ -1,5 +1,11 @@
-import Form from '../../components/register/Register';
+import Brand from '../../components/register/brandRegister';
+import Form from '../../components/register/formRegister';
 
 export default function Register() {
-  return <Form />;
+  return (
+    <div>
+      <Brand />
+      <Form />
+    </div>
+  );
 }

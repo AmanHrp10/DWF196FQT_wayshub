@@ -1,0 +1,50 @@
+.card-register {
+    position: absolute;
+    width: 380px;
+    height: 441px;
+    left: 771px;
+    top: 60px;
+
+    background: #161616;
+    border-radius: 10px;
+}
+
+.signUp input {
+    margin-bottom: 1.5em;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid rgba(188, 188, 188, 1);
+    border-radius: 5px;
+}
+
+.signUp textarea {
+    margin-bottom: 1.5em;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid rgba(188, 188, 188, 1);
+    border-radius: 5px;
+}
+
+.signUp h2 {
+    color: #fff;
+    margin-bottom: .7em;
+}
+
+.btnSignUp {
+    display: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Brand file */
+
+.imgRegister {
+    position: absolute;
+    left: 169px;
+    top: 137px;
+}
+
+.buttonRegister {
+    position: absolute;
+    width: 120px;
+    top: 320px;
+    left: 0px;
+}

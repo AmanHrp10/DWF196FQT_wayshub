@@ -1,0 +1,35 @@
+.addTitle {
+    margin-top: 2em;
+    color: #fff;
+}
+
+.formAdd {
+    position: absolute;
+    width: 980px;
+}
+
+.title {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 280px;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.desc {
+    width: 964px;
+}
+
+.btnAdd {
+    width: 964px;
+    background: #FF7A00;
+    color: #fff;
+
+}
+
+.btnAdd:hover {
+    color: #fff;
+    font-weight: bold;
+}

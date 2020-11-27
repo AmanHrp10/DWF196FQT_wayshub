@@ -12,7 +12,7 @@ export default function BrandRegister() {
           width='387px'
           height='287px'
         />
-        <Link to='/'>
+        <Link to='/login'>
           <Button variant='warning' className='buttonRegister' size='sm'>
             Sign In
           </Button>

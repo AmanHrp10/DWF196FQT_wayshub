@@ -9,11 +9,12 @@
     border-radius: 10px;
 }
 
-.signUp input {
+.signUp .register {
     margin-bottom: 1.5em;
     background: rgba(210, 210, 210, 0.25);
     border: 2px solid rgba(188, 188, 188, 1);
     border-radius: 5px;
+    width: 100%;
 }
 
 .signUp textarea {

@@ -6,15 +6,19 @@ export default function FormRegister() {
       <div className='signUp'>
         <div className='container'>
           <h2>Sign Up</h2>
-          <input type='text' className='form-control' placeholder='Email' />
+          <input
+            type='text'
+            className='form-control register'
+            placeholder='Email'
+          />
           <input
             type='password'
-            className='form-control'
+            className='form-control register'
             placeholder='Password'
           />
           <input
             type='text'
-            className='form-control'
+            className='form-control register'
             placeholder='Channel name'
           />
           <textarea
@@ -23,7 +27,7 @@ export default function FormRegister() {
             id=''
             cols='3'
             rows='3'
-            className='form-control'
+            className='form-control register'
           ></textarea>
           <button type='submit' className='btnSignUp btn btn-warning'>
             Sign Up

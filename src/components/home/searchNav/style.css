@@ -1,0 +1,49 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    margin: 20px 0 0 0;
+    position: absolute;
+}
+
+.search input {
+
+    width: 500px;
+    height: 41px;
+    border: 2px solid #bcbcbc;
+    border-radius: 5px;
+    background: rgba(210, 210, 210, .25);
+
+}
+
+.item {
+    display: flex;
+}
+
+.item .camera {
+    margin-left: 120px;
+}
+
+.item .addVideo {
+    margin: 4px 0 0 15px;
+}
+
+.item .logoChannel {
+    margin-left: -60px;
+} */
+
+.form-control {
+    width: 450px;
+    height: 41px;
+    border: 2px solid #bcbcbc;
+    border-radius: 5px;
+    background: rgba(210, 210, 210, .25);
+
+
+}
+
+.nav-right {
+    padding-left: 42px;
+}

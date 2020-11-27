@@ -10,7 +10,7 @@ export default function BrandLogin() {
           src='https://1.bp.blogspot.com/-1ec70FZ__Dw/X74uFh62mQI/AAAAAAAAHHE/l_0AB2XyaAELWWomITOKWetnMPxudlujACLcBGAsYHQ/s320/Group%2B1desLogin.png'
           alt=''
           width='387px'
-          height='294px'
+          height='287px'
         />
         <Link to='/register'>
           <Button variant='warning' className='buttonLogin' size='sm'>

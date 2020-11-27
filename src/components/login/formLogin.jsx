@@ -6,10 +6,14 @@ export default function FormLogin() {
       <div className='signIn'>
         <div className='container'>
           <h2>Sign In</h2>
-          <input type='text' className='form-control' placeholder='Email' />
+          <input
+            type='text'
+            className='form-control login'
+            placeholder='Email'
+          />
           <input
             type='password'
-            className='form-control'
+            className='form-control login'
             placeholder='Password'
           />
           <button type='submit' className='btn1 btn btn-warning'>

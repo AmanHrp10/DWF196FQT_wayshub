@@ -1,0 +1,23 @@
+.input-wrap .input-file input {
+    display: none;
+}
+
+.input-wrap {
+    /* margin-left: 38px; */
+    width: 280px;
+}
+
+.input-wrap:hover {
+    background: #fff;
+    color: black;
+    border-color: lightblue;
+}
+
+.input-file {
+    cursor: pointer;
+}
+
+.input-file img {
+    padding-left: 102px;
+    margin-top: -3px;
+}

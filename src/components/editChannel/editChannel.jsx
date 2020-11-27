@@ -6,7 +6,7 @@ export default function EditChannel() {
   return (
     <div className='itemNavAdd '>
       <Navbar className='navbarAdd' />
-      <FormEdit />
+      <FormEdit className='' />
     </div>
   );
 }

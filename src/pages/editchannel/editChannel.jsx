@@ -5,7 +5,7 @@ import Sidebar from '../../components/home/sidebar/sidebar';
 export default function EditChannel() {
   return (
     <Container fluid='md'>
-      <Row>
+      <Row className=''>
         <Col>
           <Sidebar />
         </Col>

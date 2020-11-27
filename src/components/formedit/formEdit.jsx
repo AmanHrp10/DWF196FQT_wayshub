@@ -11,7 +11,7 @@ export default function FileEdit() {
         <div className='col-md-8'>
           <FormInput
             type='text'
-            className='form-control title'
+            className='form-control'
             placeholder='Name Channel'
           />
         </div>

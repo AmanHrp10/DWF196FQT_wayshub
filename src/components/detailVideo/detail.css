@@ -1,0 +1,39 @@
+.navDetail {
+    margin-left: 350px;
+    margin-top: 34px;
+    width: 940px;
+}
+
+.navbarDetail {
+    margin-left: 10px;
+}
+
+
+.textarea {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.btnComment {
+    background: #FF7A00;
+    padding: 0 20px 0 20px;
+    margin-left: 635px;
+}
+
+
+.contentDetail {
+    margin-top: 30px;
+    width: 710px;
+    margin-left: 350px;
+}
+
+.views {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+}
+
+.recomendation {
+    padding: 18px;
+    margin-top: 9px;
+}

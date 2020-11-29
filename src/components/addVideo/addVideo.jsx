@@ -6,7 +6,7 @@ import './styleAdd.css';
 export default function AddVideo() {
   return (
     <div className='itemNavAdd '>
-      <Navbar className='navbarAdd' />
+      <Navbar className='navbarAdd' customClassAddVideo='add-addVideo' />
       <FormAdd />
     </div>
   );

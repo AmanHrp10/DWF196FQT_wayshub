@@ -4,13 +4,13 @@ import './style.css';
 import Card from './card/card';
 import Navbar from '../searchNav/navbar';
 
-import { HomeVideos } from '../../../API/homeVideo';
+import HomeVideos from '../../../API/homeVideo';
 
 export default function Content() {
   return (
     <div className='itemNav'>
-      <Navbar />
-      <div className='row mt-5'>
+      <Navbar customClassAddVideo='home-addVideo' />
+      <div className='row' style={{ marginTop: '60px' }}>
         {HomeVideos.map((video) => (
           <div className='col-md-3'>
             <Card product={video} key={video.id} />

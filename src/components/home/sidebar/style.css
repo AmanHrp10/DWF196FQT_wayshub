@@ -71,3 +71,7 @@ Link:hover {
 .active {
     color: #FF7A00;
 }
+
+.dropdown-toggle::after {
+    display: none;
+}

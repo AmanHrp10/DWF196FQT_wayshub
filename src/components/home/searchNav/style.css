@@ -39,11 +39,65 @@
     height: 41px;
     border: 2px solid #bcbcbc;
     border-radius: 5px;
-    background: rgba(210, 210, 210, .25);
-
-
+    background: rgba(210, 210, 210, 0.25);
 }
 
 .nav-right {
     padding-left: 42px;
+    display: flex;
+}
+
+.profile {
+    transform: translate(40px, -15px);
+}
+
+.logo-profile {
+    cursor: pointer;
+    content: none;
+    background: none;
+    border: none;
+}
+
+.logo-profile:hover {
+    background: none;
+    border: none;
+}
+
+.logo-profile.show {
+    background: none;
+    border: none;
+}
+
+
+
+.show>.btn-primary.dropdown-toggle {
+    background: none;
+    border: none;
+}
+
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+.btn-primary:hover {
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+.dropdown-menu {
+    background: #151515;
+    border-radius: 4px;
+}
+
+.dropdown-item:hover {
+    background: none;
 }

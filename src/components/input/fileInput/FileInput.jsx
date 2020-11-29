@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FileInput.css';
 
 export default function FileInput({ label, icon, width, addClass }) {
-  const hiddenFile = React.useRef(null);
+  const hiddenFileThumbnail = React.useRef(null);
   const handleThumbnailClick = () => {
-    hiddenFile.current.click();
+    hiddenFileThumbnail.current.click();
   };
 
   const handleChangeThumbnail = (e) => {
@@ -19,7 +19,7 @@ export default function FileInput({ label, icon, width, addClass }) {
           type='file'
           className='input'
           onChange={handleChangeThumbnail}
-          ref={hiddenFile}
+          ref={hiddenFileThumbnail}
           style={{ width: `${width}` }}
         />
         <img src={icon} alt='' className={addClass} />

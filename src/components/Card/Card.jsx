@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
+
 export default function Card({ id, title, channel, image, views, date }) {
   return (
     <div className='card'>
-      <img src={image} alt={title} className='img-fluid' />
+      <Link to={`/detail-video/${id}`}>
+        <img src={image} alt={title} className='img-fluid' />
+      </Link>
       <div className='card-footer'>
         <p className='card-title text-break'>{title}</p>
         <p>{channel}</p>

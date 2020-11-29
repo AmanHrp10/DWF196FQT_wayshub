@@ -1,7 +1,7 @@
 import './style.css';
 // import SearchNav from '../searchNav/searchNav';
 // import navbar from '../searchNav/navbar';
-import Card from './card/card';
+import Card from '../../Card/Card';
 import Navbar from '../searchNav/navbar';
 
 import HomeVideos from '../../../API/homeVideo';
@@ -13,7 +13,14 @@ export default function Content() {
       <div className='row' style={{ marginTop: '60px' }}>
         {HomeVideos.map((video) => (
           <div className='col-md-3'>
-            <Card product={video} key={video.id} />
+            <Card
+              id={video.id}
+              title={video.title}
+              channel={video.channel}
+              image={video.image}
+              views={video.views}
+              date={video.date}
+            />
           </div>
         ))}
       </div>

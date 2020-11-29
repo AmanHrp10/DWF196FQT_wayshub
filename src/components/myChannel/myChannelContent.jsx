@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { isValidElement, useState } from 'react';
 
 import Navbar from '../home/searchNav/navbar';
 import Background from '../../images/img-bg.png';
@@ -9,12 +9,12 @@ import Desc from './descriptionChannel/description';
 import './style.css';
 
 export default function MyChannel() {
-  let [isVideos, setIsVideos] = useState(false);
+  let [isDesc, setIsDesc] = useState(false);
   const handleVideo = () => {
-    setIsVideos((isVideos = !isVideos));
+    setIsDesc((isDesc = !isDesc));
   };
   const handleDescription = () => {
-    setIsVideos((isVideos = !isVideos));
+    setIsDesc((isDesc = !isDesc));
   };
   return (
     <>
@@ -50,12 +50,12 @@ export default function MyChannel() {
           <ul className='d-flex'>
             <Link onClick={handleVideo}>
               <li className='videoProfile'>
-                <span className={isVideos ? 'active' : ''}>Video</span>
+                <span className={!isDesc ? 'active' : ''}>Video</span>
               </li>
             </Link>
             <Link onClick={handleDescription}>
               <li className='descProfile'>
-                <span className={!isVideos ? 'active' : ''}>
+                <span className={isDesc ? 'active' : ''}>
                   Description Channel
                 </span>
               </li>
@@ -66,7 +66,7 @@ export default function MyChannel() {
               color='white'
               style={{ border: '2px solid', marginTop: '-20px' }}
             />
-            {isVideos ? <Videos /> : <Desc />}
+            {!isDesc ? <Videos /> : <Desc />}
           </div>
         </div>
       </div>

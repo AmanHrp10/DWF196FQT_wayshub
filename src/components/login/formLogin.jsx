@@ -1,6 +1,20 @@
 import './style.css';
+import { useContext } from 'react';
+import { AppContext } from '../../context/appContext';
+import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function FormLogin() {
+  const [state, dispatch] = useContext(AppContext);
+  const router = useHistory();
+
+  const handleLogin = () => {
+    router.push('/');
+    dispatch({
+      type: 'LOGIN',
+    });
+  };
+
   return (
     <div className='card-login'>
       <div className='signIn'>
@@ -16,7 +30,8 @@ export default function FormLogin() {
             className='form-control login'
             placeholder='Password'
           />
-          <button type='submit' className='btn1 btn btn-warning'>
+
+          <button onClick={handleLogin} className='btn1 btn btn-warning'>
             Sign In
           </button>
         </div>

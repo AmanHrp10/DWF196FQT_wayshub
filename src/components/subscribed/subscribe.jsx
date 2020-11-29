@@ -8,7 +8,7 @@ export default function Subscribed() {
   return (
     <div>
       <div className='sideSub'>
-        <Sidebar />
+        <Sidebar isSubscribe='isSubscribe' />
       </div>
       <div className='navSub'>
         <Navbar customClassAddVideo='navSubs' />

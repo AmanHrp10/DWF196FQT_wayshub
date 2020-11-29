@@ -1,14 +1,17 @@
 import './style.css';
 import { Link, useHistory } from 'react-router-dom';
-import React, { useState } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { FaRegUser } from 'react-icons/fa';
 import { BsFolderSymlink } from 'react-icons/bs';
 
 export default function Navbar({ customClass, customClassAddVideo }) {
-  // const dropDown = () => {
+  // const [state] = useContext(AppContext);
 
   const router = useHistory();
+
+  const handleLogout = () => {
+    router.push('/login');
+  };
 
   return (
     <div className={customClass}>
@@ -50,7 +53,7 @@ export default function Navbar({ customClass, customClassAddVideo }) {
                 </span>{' '}
                 My Profile
               </Dropdown.Item>
-              <Dropdown.Item className='text-white'>
+              <Dropdown.Item className='text-white' onClick={handleLogout}>
                 <span style={{ paddingRight: '15px' }}>
                   <BsFolderSymlink />{' '}
                 </span>{' '}

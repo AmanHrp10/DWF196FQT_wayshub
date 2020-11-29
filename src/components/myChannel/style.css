@@ -65,3 +65,7 @@
 .contentProfile {
     margin-left: -20px;
 }
+
+.active {
+    color: #FF7A00;
+}

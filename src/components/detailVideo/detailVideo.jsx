@@ -20,7 +20,7 @@ export default function DetailVideo() {
   let { id } = useParams();
   console.log(video);
   useEffect(() => {
-    const videoById = HomeVideos.find((video) => video.id);
+    const videoById = HomeVideos.find((video) => video.id == id);
     console.log(videoById);
     setVideo(videoById);
   }, []);
@@ -68,6 +68,8 @@ export default function DetailVideo() {
         <div className='recomendation'>
           {HomeVideos.map((video) => (
             <Card
+              key={video.id}
+              id={video.id}
               title={video.title}
               channel={video.channel}
               image={video.image}

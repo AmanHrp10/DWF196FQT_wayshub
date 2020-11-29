@@ -1,21 +1,23 @@
 import './style.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Channels from '../../../API/channel';
 
-export default function Sidebar() {
+export default function Sidebar({ isHome, isSubscribe }) {
   console.log(Channels);
   return (
     <div className='sidebar'>
       <div className='wrap'>
-        <div className='logo'>
-          <img
-            src='https://1.bp.blogspot.com/-ZNaBvpDMZSg/X752CxhluaI/AAAAAAAAHHQ/KLisRLh7wiUOvQusbmiULOLf1Fqo3JS4gCLcBGAsYHQ/s320/Icon.png'
-            alt=''
-          />
-        </div>
+        <Link to='/'>
+          <div className='logo'>
+            <img
+              src='https://1.bp.blogspot.com/-ZNaBvpDMZSg/X752CxhluaI/AAAAAAAAHHQ/KLisRLh7wiUOvQusbmiULOLf1Fqo3JS4gCLcBGAsYHQ/s320/Icon.png'
+              alt=''
+            />
+          </div>
+        </Link>
 
         <ul>
-          <NavLink activeClassName='' to='/'>
+          <NavLink activeClassName={isHome ? 'active' : ''} to='/'>
             <li>
               <span className='icon'>
                 <img
@@ -27,7 +29,10 @@ export default function Sidebar() {
               Home
             </li>
           </NavLink>
-          <NavLink activeClassName='active' to='/subcription'>
+          <NavLink
+            activeClassName={isSubscribe ? 'active' : ''}
+            to='/subcription'
+          >
             <li>
               <span className='icon'>
                 <img

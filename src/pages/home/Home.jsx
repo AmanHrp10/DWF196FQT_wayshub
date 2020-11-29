@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Container fluid='md'>
       <Row>
-        <Col className='sidebar'>
+        <Col className='sidebar' isHome='isHome'>
           <Sidebar />
         </Col>
         <Col className='content' md='auto'>

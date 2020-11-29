@@ -39,6 +39,7 @@ export default function ContentCreator() {
           {Videos.map((video) => (
             <div className='col-md-3' key={video.id}>
               <Card
+                id={video.id}
                 title={video.title}
                 channel={video.channel}
                 image={video.image}

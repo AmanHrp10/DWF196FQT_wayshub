@@ -1,19 +1,17 @@
-// import Sidebar from '../home/sidebar/sidebar';
-// import Navbar from '../home/searchNav/navbar';
-import HomeVideos from '../../API/homeVideo';
-import Comments from '../../API/comment';
-import IconView from '../../images/view1.png';
-import IconDate from '../../images/refresh1.png';
-import User from '../../images/channel/channel2.png';
-import TextArea from '../atoms/textarea';
-import Comment from '../comment/comment';
-import Card from '../Card/Card';
+import HomeVideos from '../../../API/homeVideo';
+import Comments from '../../../API/comment';
+import IconView from '../../../images/view1.png';
+import IconDate from '../../../images/refresh1.png';
+import User from '../../../images/channel/channel2.png';
+import TextArea from '../../atoms/textarea';
+import Comment from '../comment';
+import Card from '../Card';
 
 // library
 import ReactPlayer from 'react-player';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './detail.css';
+import './detailVideo.css';
 
 export default function DetailVideo() {
   const [video, setVideo] = useState('');
@@ -51,7 +49,7 @@ export default function DetailVideo() {
                 <TextArea placeholder='Comment...' className='ml-4' />
               </div>
             </div>
-            <div className='buttonComment'>
+            <div className='buttonComment mt-2'>
               <button className='btn btnComment'>Post</button>
             </div>
             {Comments.map((item) => (

@@ -1,7 +1,7 @@
 import Background from '../../../images/img-bg.png';
 import Profile from '../../../images/channel/channel1.png';
 import Videos from '../../../API/myVideos';
-import Card from '../../Card/Card';
+import Card from '../Card';
 import './contentCreator.css';
 
 export default function ContentCreator() {

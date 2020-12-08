@@ -1,4 +1,4 @@
-import Card from '../../Card/Card';
+import Card from '../Card';
 import MyVideos from '../../../API/myVideos';
 
 export default function myVideos() {

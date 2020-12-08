@@ -50,3 +50,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+.form-control {
+  background: rgba(210, 210, 210, .25);
+}

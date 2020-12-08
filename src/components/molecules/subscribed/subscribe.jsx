@@ -1,7 +1,7 @@
 import Sidebar from '../home/sidebar/sidebar';
 import Navbar from '../home/searchNav/navbar';
-import Card from '../Card/Card';
-import Subscribeds from '../../API/subscribed';
+import Card from '../Card';
+import Subscribeds from '../../../API/subscribed';
 import './subscribe.css';
 
 export default function Subscribed() {

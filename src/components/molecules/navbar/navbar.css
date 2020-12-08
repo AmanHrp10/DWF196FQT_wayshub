@@ -1,5 +1,5 @@
 .navNew {
-    width: 100%;
+    width: 80%;
     height: 75px;
     display: flex;
     color: #fff;
@@ -8,9 +8,13 @@
     padding-top: 20px;
     background: #0b0b0b;
 }
+ 
 
+.form-control.navbar-search{
+    width: 50%;
+}
 .addVideoNew {
-    margin-left: 370px;
+    margin-left: 310px;
     margin-top: 7px;
 }
 
@@ -26,20 +30,43 @@
 
 }
 
-.btn-primary {
+.dropdown{
+    position: absolute;
+    right: -1px;
+    background: none;
+    border: none;
+}
+
+.dropdown-menu{
+    background: #161616;
+}
+
+.dropdown-item:hover{
+    background: rgba(210, 210, 210, .25);
+}
+.btn-primary.btn-primary {
     background:none;
     border: none
 }
 
-.btn-primary:focus{
-        color: #fff;
-        background: none;
-        border: none;
-}
-btn-primary.focus,
-.btn-primary:focus {
+.dropdown-toggle {
     color: #fff;
+    background-color: none; 
+    border-color: none;
 }
+.dropdown:hover {
+    color: #fff;
+    background-color: none; 
+    border-color: none;
+}
+
+.dropdown.toggle:focus {
+    display: none;
+}
+.dropdown.toggle:after {
+    display : none
+}
+
 
 
 .itemNav {

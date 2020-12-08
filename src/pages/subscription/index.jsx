@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import MainMenu from '../../components/molecules/mainMenu';
 import Videos from '../../API/subscribed';
-import Card from '../../components/Card/Card';
+import Card from '../../components/molecules/Card';
 
 export default function Subcription() {
   return (

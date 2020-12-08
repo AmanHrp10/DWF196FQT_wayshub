@@ -1,6 +1,9 @@
+// import Sidebar from '../../components/home/sidebar/sidebar';
+// import Content from '../../components/home/content/content';
+// import { Container, Row, Col } from 'react-bootstrap';
 import MainMenu from '../../components/molecules/mainMenu';
 import Videos from '../../API/homeVideo';
-import Card from '../../components/Card/Card';
+import Card from '../../components/molecules/Card';
 import { Fragment } from 'react';
 
 export default function Home() {

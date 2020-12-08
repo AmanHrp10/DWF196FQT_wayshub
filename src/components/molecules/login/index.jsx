@@ -17,7 +17,7 @@ export default function Login() {
   };
   return (
     <Fragment>
-      <div className='wrapper'>
+      <div className='wrapper login'>
         <div className='wrapper-form'>
           <h3 className='text-white'>Sign In</h3>
           <FormInput type='text' title='Email' customClass='inputLogin' />

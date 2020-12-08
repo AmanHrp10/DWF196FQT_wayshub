@@ -58,7 +58,6 @@ export default function Sidebar({ isHome, isSubscribed }) {
           </ul>
         </div>
       </div>
-      <Navbar />
     </Fragment>
   );
 }

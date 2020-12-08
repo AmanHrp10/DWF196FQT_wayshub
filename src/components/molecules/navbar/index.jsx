@@ -18,7 +18,7 @@ export default function Navbar({ isAddVideo }) {
   return (
     <Fragment>
       <div className='navNew fixed-top'>
-        <FormInput type='text' title='Search..' />
+        <FormInput type='text' title='Search..' customClass="navbar-search"/>
         <div className='addVideoNew'>
           <Link to='/add-video'>
             <img

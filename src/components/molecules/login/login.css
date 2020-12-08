@@ -7,6 +7,10 @@
     margin-top: 20px;
 }
 
+.wrapper.login{
+    margin-top: 70px;
+}
+
 .wrapper .title {
     font-family: "Montserrat";
     color: #fff;
@@ -22,7 +26,7 @@
 
 .inputLogin {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .btn-register {

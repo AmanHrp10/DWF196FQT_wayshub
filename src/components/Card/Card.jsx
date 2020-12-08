@@ -2,11 +2,16 @@ import { Link } from 'react-router-dom';
 
 export default function Card({ id, title, channel, image, views, date }) {
   return (
-    <div className='card'>
+    <div className='card mb-3'>
       <Link to={`/detail-video/${id}`}>
-        <img src={image} alt={title} className='img-fluid' />
+        <img
+          src={image}
+          alt={title}
+          className='img-fluid'
+          style={{ width: '100%' }}
+        />
       </Link>
-      <div className='card-footer'>
+      <div className='card-footer' style={{ overflow: 'hidden' }}>
         <p className='card-title text-break'>{title}</p>
         <p>{channel}</p>
         <div className='d-flex detail'>

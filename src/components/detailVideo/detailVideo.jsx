@@ -1,11 +1,11 @@
-import Sidebar from '../home/sidebar/sidebar';
-import Navbar from '../home/searchNav/navbar';
+// import Sidebar from '../home/sidebar/sidebar';
+// import Navbar from '../home/searchNav/navbar';
 import HomeVideos from '../../API/homeVideo';
 import Comments from '../../API/comment';
 import IconView from '../../images/view1.png';
 import IconDate from '../../images/refresh1.png';
 import User from '../../images/channel/channel2.png';
-import TextArea from '../textArea/textArea';
+import TextArea from '../atoms/textarea';
 import Comment from '../comment/comment';
 import Card from '../Card/Card';
 
@@ -27,13 +27,7 @@ export default function DetailVideo() {
 
   return (
     <div>
-      <div className='sideDetail'>
-        <Sidebar />
-      </div>
-      <div className='navDetail'>
-        <Navbar customClassAddVideo='navbarDetail' />
-      </div>
-      <div className='d-flex'>
+      <div className='d-flex contentNew'>
         <div className='contentDetail'>
           <div className='videoDetail'>
             <ReactPlayer width='100%' controls url={video.URL} />
@@ -66,6 +60,8 @@ export default function DetailVideo() {
           </div>
         </div>
         <div className='recomendation'>
+          <h5 className='text-white'> Recomendation</h5>
+          <hr color='white' />
           {HomeVideos.map((video) => (
             <Card
               key={video.id}

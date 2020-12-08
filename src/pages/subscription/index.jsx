@@ -1,23 +1,12 @@
-import MainMenu from '../../components/molecules/mainMenu';
-import Videos from '../../API/homeVideo';
-import Card from '../../components/Card/Card';
 import { Fragment } from 'react';
+import MainMenu from '../../components/molecules/mainMenu';
+import Videos from '../../API/subscribed';
+import Card from '../../components/Card/Card';
 
-export default function Home() {
+export default function Subcription() {
   return (
-    // <Container fluid='md'>
-    //   <Row>
-    //     <Col className='sidebar' isHome='isHome'>
-    //       <Sidebar />
-    //     </Col>
-    //     <Col className='content' md='auto'>
-    //       <Content />
-    //     </Col>
-    //   </Row>
-    // </Container>
-
     <Fragment>
-      <MainMenu isHome />
+      <MainMenu isSubscribed />
       <div
         className='container'
         style={{ marginLeft: '265px', paddingTop: '110px', width: '1063px' }}

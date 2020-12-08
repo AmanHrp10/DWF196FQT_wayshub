@@ -1,18 +1,12 @@
-import ContentCreator from '../../components/contentCreator/contentCreator';
-import { Container, Col, Row } from 'react-bootstrap';
-import Sidebar from '../../components/home/sidebar/sidebar';
+import { Fragment } from 'react';
+import MainMenu from '../../components/molecules/mainMenu';
+import ContentCreator from '../../components/molecules/contentCreator';
 
 export default function Content() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Sidebar />
-        </Col>
-        <Col>
-          <ContentCreator />
-        </Col>
-      </Row>
-    </Container>
+    <Fragment>
+      <MainMenu />
+      <ContentCreator />
+    </Fragment>
   );
 }

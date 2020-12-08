@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import logo from './logo.svg';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from './pages/home/Home';
+import Home from './pages/home';
 import AddVideo from './pages/addVideo';
 import EditChannel from './pages/editchannel';
 import MyChannel from './pages/myChannel';
